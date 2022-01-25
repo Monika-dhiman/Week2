@@ -1,0 +1,80 @@
+/*Question 2: Convert these classes into JSON parse
+
+public class Employee
+{    
+    String name;  
+    int salary;  
+    Boolean married;
+    String grade = null;
+    Address address;
+    List<String> mobileNumbers;
+    Map<String,Object> Address;
+}
+
+public class Address
+{
+ String primaryAddress;
+ String secondaryAddress;
+ String country;
+ String state;
+}*/
+
+------------------------------
+
+//Class to JSON
+{employee = {"name": "efg", 
+	    "salary" : 0, 
+	    "married" : true, 
+	    "grade" : "A",
+	    "address":{"primaryAddress": "abc", 
+			"secondaryAddress": "xyz", 
+			"country": "india", 
+			"state": "pqr"},
+	     "mobileNumbers": ["m1", "m2",...,"mn"],
+	     "address":{"primaryAddress": "abc", 
+			"secondaryAddress": "xyz", 
+			"country": "india", 
+			"state": "pqr"}
+	     }
+}
+----------------------------------------------------------------
+//JSON to Class
+Question 3: Convert the JSON into class
+
+{
+   "firstName":"John",
+   "lastName":"Smith",
+   "age":25,
+   "address":{
+      "streetAddress":"21 2nd Street",
+      "city":"New York",
+      "state":"NY",
+      "postalCode":10021
+   },
+   "phoneNumbers":[
+      {
+         "type":"home",
+         "number":"212 555-1234"
+      },
+      {
+         "type":"fax",
+         "number":"646 555-4567"
+      }
+   ]
+}
+ ---------------------------------------------------
+class Employee {
+	String firstName = "John";
+	String lastName = "Smith";
+	int age = 25;
+	Adress address;
+	Map<String, obj>phoneNumbers;
+}
+
+class Address{
+	String streetAddress;
+	String city;
+	String state;
+	int postalCode;
+}
+
